@@ -19,4 +19,10 @@ void setup() {
 void loop() {
     playNote(NOTE_C6, quarterNote);
     playNote(NOTE_D6, quarterNote);
+    playNote(NOTE_G5, quarterNote);
+    playNote(NOTE_D6, quarterNote);
+    playNote(NOTE_E6, quarterNote);
+    playNote(NOTE_G6, eighthNote);
+    playNote(NOTE_F6, eighthNote);
+    playNote(NOTE_E6, eighthNote);
 }
