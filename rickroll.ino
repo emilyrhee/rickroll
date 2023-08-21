@@ -3,7 +3,7 @@
 int quarterNote = 1000;
 int halfNote = quarterNote * 2;
 int eighthNote = quarterNote / 2;
-int dot(int note) {
+int dot(float note) {
   return note / 2;
 }
 
@@ -22,7 +22,7 @@ void loop() {
     playNote(NOTE_G5, quarterNote);
     playNote(NOTE_D6, quarterNote);
     playNote(NOTE_E6, quarterNote);
-    playNote(NOTE_G6, eighthNote, 500);
-    playNote(NOTE_F6, eighthNote, 500);
-    playNote(NOTE_E6, eighthNote, 500);
+    playNote(NOTE_G6, eighthNote, 250);
+    playNote(NOTE_F6, eighthNote, 250);
+    playNote(NOTE_E6, eighthNote, 250);
 }
