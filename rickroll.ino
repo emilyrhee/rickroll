@@ -1,15 +1,8 @@
 #include "pitches.h"
 
-int quarterNote = 1000;
-int halfNote = quarterNote * 2;
-int eighthNote = quarterNote / 2;
-int dot(float note) {
-  return note / 2;
-}
-
-void playNote(int note, int duration, int rest = 1000) {
-    tone(8, note, duration);
-    delay(rest);
+void playNote(int note, float duration) {
+    tone(8, note, duration * 4000);
+    delay(duration * 4000);
     noTone(8);
 }
 
@@ -17,12 +10,12 @@ void setup() {
 }
 
 void loop() {
-    playNote(NOTE_C6, quarterNote);
-    playNote(NOTE_D6, quarterNote);
-    playNote(NOTE_G5, quarterNote);
-    playNote(NOTE_D6, quarterNote);
-    playNote(NOTE_E6, quarterNote);
-    playNote(NOTE_G6, eighthNote, 250);
-    playNote(NOTE_F6, eighthNote, 250);
-    playNote(NOTE_E6, eighthNote, 250);
+    playNote(NOTE_C6, 1/4.0);
+    playNote(NOTE_D6, 1/4.0);
+    playNote(NOTE_G5, 1/4.0);
+    playNote(NOTE_D6, 1/4.0);
+    playNote(NOTE_E6, 1/4.0);
+    playNote(NOTE_G6, 1/8.0);
+    playNote(NOTE_F6, 1/8.0);
+    playNote(NOTE_E6, 1/8.0);
 }
