@@ -1,8 +1,10 @@
 #include "pitches.h"
 
 void playNote(int note, float duration) {
-    tone(8, note, duration * 2000);
-    delay(duration * 2000);
+    float milliseconds = duration * 2000;
+    
+    tone(8, note, milliseconds);
+    delay(milliseconds);
     noTone(8);
 }
 
